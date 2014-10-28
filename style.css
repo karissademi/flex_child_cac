@@ -1,0 +1,445 @@
+/*
+Theme Name: Phila.gov - Connect2College - Flex Theme Child
+Theme URI: 
+Description: A custom child theme for the Connect2College website. 
+Author: ThemesHolic - Modified by Karissa Demi
+Author URI: 
+Template: flex
+*/
+
+@import url(../flex/style.css);
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+body {
+	background-color:#f2f2f2 !important;
+}
+
+header.border-4 .header-content {
+	border-bottom: 5px solid rgb(42,91,154);
+}
+/*remove mobile menu */
+#menu-mobile-trigger {
+	display: none !important;
+}
+header #logo {
+	float:none;
+	margin: 0 auto;
+	text-align: center;
+}
+/*add background and margin to "landing" pages - to aid in user input*/
+.cac-wrapper .marg{
+	margin:10px;
+	background:#fff;
+	padding:10px;
+}
+
+.home .bg-image {
+	padding:0;
+	border:none;
+	background-color:transparent !important;
+}
+.home .bg-image img {
+	width:100%;
+	height:auto;
+}
+
+.home .bg-image figure {
+	position: relative;
+}
+
+.home .bg-image figcaption {
+	position:absolute;
+	top:40%;
+	width:100%;
+	text-align:center;
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 34px;
+	text-shadow: 1px 1px #0C0C0C;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.home .breadcrumbs {
+	display:none;
+}
+
+.header-menu {
+	display:none;
+}
+/*hover changes on home images */
+.home .bg-image .img-caption {
+	position:relative;
+	display: block;
+	opacity: 1;
+	width: 100%;
+	height:100%;
+	top:0;
+	background:rgba(42,91,154, .8);
+}
+.home .bg-image figure a:hover > .img-caption, 
+.home .bg-image figure:hover a > .img-caption
+{
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-in-out;
+}
+.home .bg-image figure a:hover + figcaption,
+.home .bg-image figure:hover a + figcaption
+{
+	color:#F1C914;
+	text-shadow: none;
+}
+
+.home .bg-image.small figure a:hover + figcaption,
+.home .bg-image.small figure:hover a + figcaption {
+	font-size:28px;
+}
+
+.home .bg-image .img-caption .caption-text{
+	position: relative;
+	top: 30%;
+	width: 100%;
+	padding: 20px;
+	color:#fff;
+	font-size:16px;
+	font-style: normal;
+	display:block;
+	border-top: 1px solid #fff;
+	text-align:left;
+	height:220px;
+}
+
+.home .bg-image .img-caption .caption-link {
+	position: absolute;
+	width: 88%;
+	display: block;
+	text-align: right;
+	top: 150px;
+	color:#F1C914;
+}
+/*accordions*/
+
+.md-accordions .panel .panel-heading a:before {
+	left:10px !important;
+	right:auto !important;
+}
+
+.md-accordions .panel .panel-heading a.collapsed {
+	background: rgba(14, 30, 52, 1) !important;
+	color: #FFF !important;
+	padding: 5px 30px !important;
+}
+
+.md-accordions .panel .panel-heading a{
+	padding: 5px 30px !important;
+}
+
+/*breadcrumbs*/
+.breadcrumbs {
+	padding:20px 0;
+	font-size: 18px;
+}
+.breadcrumbs .small{
+	font-size:16px;
+	color:#909090;
+}
+
+/*general */
+.page-content {
+	background:#f2f2f2 !important;
+	padding:40px 0;
+}
+
+h2.md-heading {
+	border-bottom:1px solid #e5e5e5; 
+	padding-bottom: 20px;
+}
+.cac-wrapper h2.md-heading {
+	border:none;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	font-size:25px;
+}
+
+/*PHILADELPHIA FUTURES page */
+
+.philadelphia-futures h3.md-heading {
+	color:#fff;
+	background:#622f92;
+	padding:10px;
+	text-transform: uppercase;
+}
+.philadelphia-futures li {
+	list-style:none;
+}
+.philadelphia-futures li:before {
+    content: "\2610";
+    margin-right:5px;
+}
+
+.philadelphia-futures li.widget{
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+	width:auto;
+}
+.philadelphia-futures li.widget:before {
+	content:"";
+}
+/*timeline pages */
+
+/* all the page content */
+.timeline .hentry {
+	position: relative;
+	padding-top: 30px;
+}
+
+.timeline .hentry::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	left: 17%;
+	margin-left: -10px;
+	margin-top: 42px;
+	border-radius: 20px;
+	border-bottom: 69px;
+}
+
+.timeline .hentry .section-content h2 {
+	display: block;
+	width: 100%;
+	padding-right: 100px;
+	position: relative;
+	padding-bottom: 0;
+	border-bottom: none;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+
+.timeline .hentry .section-content h2::after{
+	content:"";
+	height:30px;
+	width:30px;
+	position: absolute;
+	border-radius: 50%;
+	top:5px;
+	margin: 0 0 0 5px;
+}
+
+.timeline .hentry .section-content .md-text-block{
+	margin: 30px 0 15px 0;
+	background: #3594cb;
+	color: #fff;
+	padding: 1em;
+	position: relative;
+	border-radius: 5px;
+}
+
+.timeline .hentry .section-content .md-text-block::after{
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #3594cb;
+	border-width: 10px;
+	top: -19px;
+}
+
+
+ul.timeline-links {
+	list-style:none;
+	line-height:16px;
+	margin: 0;
+	padding:0;
+}
+
+ul.timeline-links li {
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+ul.timeline-links li a.current{
+	font-weight: bold;
+}
+
+#timeline-menu li a{
+	transition: font-weight .3s ease-in-out;
+	-moz-transition: font-weight .3s ease-in-out;
+	-webkit-transition: font-weight .3s ease-in-out;
+}
+
+@media(min-width:992px) {
+	.cac-wrapper .marg {
+		min-height: 320px;
+	}
+	
+	.cac-wrapper .md-button {
+		margin: 0 0 0 -58px;
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+	}
+	header.border-4 .header-content {
+		border-bottom: none;
+	}
+	header #logo {
+		float:left;
+	}
+	
+	.home .bg-image figure a:hover + figcaption,
+	.home .bg-image figure:hover a + figcaption
+	{
+		top:8%; 
+	}
+	.home .bg-image figcaption {
+		top:70%;
+	}
+	.home .bg-image .img-caption {
+		position:absolute;
+		opacity:0;
+	}
+	.home .bg-image img {
+		width:390px;
+		height:auto;
+	}	
+	#timeline-menu, .philadelphia-futures .widget {
+		margin-top: 30px;
+		position: fixed;
+		padding: 10px;
+		background: #fff;
+	}	
+	.timeline .hentry::before{
+		background: #afdcf8;
+	}
+	.timeline .hentry .section-content h2 {
+		width:25%;
+		text-align:right;
+		position: absolute;
+		font-size: 14px;
+	}
+	.timeline .hentry .section-content h2::after { 
+		background: #AFDCF8;
+	}
+	.timeline .hentry .section-content .md-text-block{
+		margin: 0 0 15px 20%;
+		
+	}
+	.timeline .hentry .section-content .md-text-block::after{
+		border-right-color: #3594cb;
+		border-bottom-color: transparent;
+		right: 100%;
+		top: 10px;
+	}
+	ul.timeline-links li {
+		display: block;
+		padding: 0;
+	}
+	.home .bg-image figcaption {
+		font-size:28px;
+	}
+	.home .bg-image.small figure a:hover + figcaption, .home .bg-image.small figure:hover a + figcaption {
+		font-size: 22px;
+	}
+	.home .bg-image .img-caption .caption-text {
+		font-size: 13px;
+		padding:10px;
+		line-height:1.4em;
+		height:auto;
+	}
+	.home .bg-image .img-caption .caption-link {
+		top: 130px;
+	}
+}
+
+
+@media(min-width:1200px) {
+	.timeline .hentry .section-content h2 {
+		font-size: 18px;
+	}
+	.home .bg-image figcaption {
+		font-size:33px;
+	}
+	.home .bg-image.small figure a:hover + figcaption, .home .bg-image.small figure:hover a + figcaption {
+		font-size: 28px;
+	}
+	.home .bg-image .img-caption .caption-text {
+		font-size: 16px;
+		padding:20px;
+	}
+	.home .bg-image .img-caption .caption-link {
+		top: 150px;
+	}
+}
+
+/*footer*/
+footer .textwidget a {
+	display: inline-block;
+	width: 50%;
+	padding: 10px;
+	color:#fff;
+}
+footer .textwidget a img {
+	float: left;
+	padding: 0px 10px;
+	width:30%;
+}
+
+/*Overrides */
+.wp-caption{
+	font-family: Open Sans;
+}
+.md-button {
+	border-color:#efc721 !important;
+	background-color: #efc721 !important;
+	color:#39659c !important;
+	letter-spacing: 1px !important;
+}
+
+.header-search {
+	display:block;
+	bottom:50px;
+	right: -20px;
+	background: none;
+	border-top: none;
+	display: block;
+	box-shadow: none;
+}
+
+#search-open {display: none;}
+
+.padding-small {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+
+.page > .padding-small {
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline !important;
+}
+
+sup {
+	top: -.2em !important;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#copyright a {
+	color:#72A0BC !important;
+}
