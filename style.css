@@ -101,7 +101,7 @@ header #logo {
 
 .home .bg-image .img-caption .caption-text{
 	position: relative;
-	top: 30%;
+	top: 0;
 	width: 100%;
 	padding: 20px;
 	color:#fff;
@@ -118,8 +118,12 @@ header #logo {
 	width: 88%;
 	display: block;
 	text-align: right;
-	top: 150px;
+	top: 77px;
 	color:#F1C914;
+}
+
+.white {
+    color:white;
 }
 /*accordions*/
 
@@ -300,10 +304,10 @@ ul.timeline-links li a.current{
 	.home .bg-image figure a:hover + figcaption,
 	.home .bg-image figure:hover a + figcaption
 	{
-		top:8%; 
+		display:none;
 	}
 	.home .bg-image figcaption {
-		top:70%;
+		top:60%;
 	}
 	.home .bg-image .img-caption {
 		position:absolute;
