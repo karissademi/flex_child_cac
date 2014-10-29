@@ -27,7 +27,9 @@ header #logo {
 	margin: 0 auto;
 	text-align: center;
 }
-
+header .header-top {
+	display:block !important;
+}
 #header-top-menu {
 	text-align: center;
 }
@@ -301,9 +303,6 @@ ul.timeline-links li a.current{
 @media(min-width:992px) {
 	.header-top .float-right{
 		float:right !important;
-	}
-	header .header-top {
-		display:block !important;
 	}
 	.cac-wrapper .marg {
 		min-height: 320px;
