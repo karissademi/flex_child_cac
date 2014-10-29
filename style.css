@@ -30,6 +30,7 @@ header #logo {
 header .header-top {
 	display:block !important;
 	text-align: center;
+	font-size: 14px;
 }
 #header-top-menu {
 	text-align: center;
@@ -39,9 +40,10 @@ header .header-top {
 	padding: 20px;
 	color: #191919 !important;
 }
-#header-top-menu a:hover{
+#header-top-menu a:hover, a:active{
 	background:#0c1d4b;
 	color:white !important;
+	text-decoration:none !important;
 }
 /*add background and margin to "landing" pages - to aid in user input*/
 .cac-wrapper .marg{
