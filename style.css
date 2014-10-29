@@ -118,7 +118,7 @@ header #logo {
 	width: 88%;
 	display: block;
 	text-align: right;
-	top: 77px;
+	top: 150px;
 	color:#F1C914;
 }
 
@@ -314,7 +314,7 @@ ul.timeline-links li a.current{
 		opacity:0;
 	}
 	.home .bg-image img {
-		width:390px;
+		width:100%;
 		height:auto;
 	}	
 	#timeline-menu, .philadelphia-futures .widget {
@@ -382,7 +382,7 @@ ul.timeline-links li a.current{
 		padding:20px;
 	}
 	.home .bg-image .img-caption .caption-link {
-		top: 150px;
+		top: 177px;
 	}
 }
 
