@@ -41,7 +41,7 @@ header .header-top {
 }
 #header-top-menu a:hover{
 	background:#0c1d4b;
-	color:white;
+	color:white !important;
 }
 /*add background and margin to "landing" pages - to aid in user input*/
 .cac-wrapper .marg{
