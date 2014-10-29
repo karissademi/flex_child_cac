@@ -35,9 +35,9 @@ header .header-top {
 	text-align: center;
 }
 #header-top-menu a{
-	background: #51b0e6;
+	background: #59c0f4;
 	padding: 20px;
-	color: #191919;
+	color: #191919 !important;
 }
 #header-top-menu a:hover{
 	background:#0c1d4b;
