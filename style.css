@@ -410,6 +410,10 @@ ul.timeline-links li a.current{
 }
 
 /*footer*/
+footer {
+	padding: 20px 0 !important;
+}
+
 footer .textwidget a {
 	display: inline-block;
 	width: 50%;
