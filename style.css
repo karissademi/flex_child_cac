@@ -30,7 +30,7 @@ header #logo {
 header .header-top {
 	display:block !important;
 	text-align: center;
-	font-size: 14px;
+	font-size: 14px !important;
 }
 #header-top-menu {
 	text-align: center;
