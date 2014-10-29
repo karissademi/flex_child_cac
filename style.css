@@ -295,8 +295,13 @@ ul.timeline-links li a.current{
 	-moz-transition: font-weight .3s ease-in-out;
 	-webkit-transition: font-weight .3s ease-in-out;
 }
-
+.header-top .float-right{
+	float:none !important;
+}
 @media(min-width:992px) {
+	.header-top .float-right{
+		float:right !important;
+	}
 	header .header-top {
 		display:block !important;
 	}
@@ -416,9 +421,7 @@ footer .textwidget a img {
 }
 
 /*Overrides */
-.header-top .float-right{
-	float:none !important;
-}
+
 .wp-caption{
 	font-family: Open Sans;
 }
