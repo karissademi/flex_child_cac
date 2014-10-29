@@ -27,6 +27,19 @@ header #logo {
 	margin: 0 auto;
 	text-align: center;
 }
+
+#header-top-menu {
+	text-align: center;
+}
+#header-top-menu a{
+	background: #51b0e6;
+	padding: 20px;
+	color: #191919;
+}
+#header-top-menu a:hover{
+	background:#0c1d4b;
+	color:white;
+}
 /*add background and margin to "landing" pages - to aid in user input*/
 .cac-wrapper .marg{
 	margin:10px;
@@ -284,6 +297,9 @@ ul.timeline-links li a.current{
 }
 
 @media(min-width:992px) {
+	header .header-top {
+		display:block !important;
+	}
 	.cac-wrapper .marg {
 		min-height: 320px;
 	}
@@ -400,6 +416,9 @@ footer .textwidget a img {
 }
 
 /*Overrides */
+.header-top .float-right{
+	float:none !important;
+}
 .wp-caption{
 	font-family: Open Sans;
 }
