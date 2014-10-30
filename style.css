@@ -189,6 +189,9 @@ h2.md-heading {
 }
 
 /*PHILADELPHIA FUTURES page */
+.philadelphia-futures h2{
+	font-size: 18px;
+}
 
 .philadelphia-futures h3.md-heading {
 	color:#fff;
@@ -199,7 +202,7 @@ h2.md-heading {
 .philadelphia-futures li {
 	list-style:none;
 }
-.philadelphia-futures li:before {
+.content-full .philadelphia-futures li:before {
     content: "\2610";
     margin-right:5px;
 }
@@ -210,9 +213,8 @@ h2.md-heading {
 	text-align: center;
 	width:auto;
 }
-.philadelphia-futures li.widget:before {
-	content:"";
-}
+
+
 /*timeline pages */
 
 /* all the page content */
