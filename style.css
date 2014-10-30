@@ -202,7 +202,7 @@ h2.md-heading {
 .philadelphia-futures li {
 	list-style:none;
 }
-.content-full .philadelphia-futures li:before {
+.philadelphia-futures .content-full li::before {
     content: "\2610";
     margin-right:5px;
 }
