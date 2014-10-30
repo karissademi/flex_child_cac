@@ -68,7 +68,7 @@ header .header-top {
 
 .home .bg-image figcaption {
 	position:absolute;
-	top:30%;
+	bottom:50%;
 	width:100%;
 	text-align:center;
 	color: #fff;
@@ -78,6 +78,7 @@ header .header-top {
 	text-shadow: 1px 1px #0C0C0C;
 	font-style: normal;
 	text-transform: uppercase;
+	background:none;
 }
 
 .home .breadcrumbs {
@@ -379,7 +380,15 @@ ul.timeline-links li a.current{
 		padding: 0;
 	}
 	.home .bg-image figcaption {
+		bottom:0;
 		font-size:28px;
+		background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+		background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,.9)));
+		background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+		background: -o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+		background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+		background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
 	}
 	.home .bg-image.small figure a:hover + figcaption, .home .bg-image.small figure:hover a + figcaption {
 		font-size: 22px;
