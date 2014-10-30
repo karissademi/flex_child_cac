@@ -95,8 +95,8 @@
 					<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
 						<?php 
 							if(isset($theme_options['logo']) && isset($theme_options['logo']['url']) && $theme_options['logo']['url'] != ''){
-								echo '<img src="'.$theme_options['logo']['url'].'" alt="' .  echo wp_title( '|', true, left ); .'" />';
-								echo '<h1 class="hide">' .  echo wp_title( '|', true, left ); .'"</h1>';
+								echo '<img src="'.$theme_options['logo']['url'].'" alt="' .  wp_title( '|', true, left ); .'" />';
+								echo '<h1 class="hide">' . wp_title( '|', true, left ); .'"</h1>';
 							}
 							else{
 								echo '<img src="'.get_template_directory_uri().'/assets/img/placeholder/logo.png" alt="' .  echo wp_title( '|', true, left ); .'" />';
