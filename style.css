@@ -40,7 +40,7 @@ header .header-top {
 	padding: 20px;
 	color: #191919 !important;
 }
-#header-top-menu a:hover, a:active{
+#header-top-menu a:hover, #header-top-menu a:active{
 	background:#0c1d4b;
 	color:white !important;
 	text-decoration:none !important;
@@ -185,6 +185,7 @@ h2.md-heading {
 	padding-bottom: 0;
 	text-transform: uppercase;
 	font-size:25px;
+	line-height: 1em;
 }
 
 /*PHILADELPHIA FUTURES page */
@@ -310,6 +311,9 @@ ul.timeline-links li a.current{
 	.cac-wrapper .marg {
 		min-height: 320px;
 	}
+	.short .cac-wrapper .marg {
+		min-height: 215px;
+	}
 	
 	.cac-wrapper .md-button {
 		margin: 0 0 0 -58px;
@@ -425,6 +429,14 @@ footer .textwidget a img {
 	padding: 0px 10px;
 	width:30%;
 }
+footer a {
+	line-height:20px;
+}
+footer span {
+	vertical-align: -webkit-baseline-middle;
+	vertical-align:baseline;
+}
+
 
 /*Overrides */
 
